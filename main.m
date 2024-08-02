@@ -1,5 +1,5 @@
 clear;
-original_data=load("E:\Documents\Programme\Matlab\FDU\My programmes\testbench\tb_netlist_5.mat");
+original_data=load("E:/Documents/Programme/Opensource/Simple_Path_Finding/testbench/tb_netlist_5.mat");
 grid=original_data.grid;
 netlist=original_data.netlist;
 wavefront=[];
