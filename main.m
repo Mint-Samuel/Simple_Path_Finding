@@ -5,7 +5,7 @@ netlist=original_data.netlist;
 wavefront=[];
 direction=[];
 path_line=[];
-falg_found=0;
+flag_found=0;
 [layers,rows,cols]=size(grid);
 flag_of_sum=sum(grid,"all")/(layers*rows*cols);
 for net_up=1:1:length(netlist)
@@ -25,8 +25,8 @@ for net_up=1:1:length(netlist)
             s_y=net_now(1,3);
             wavefront=[net_now(1,:),original_data.grid(s_z,s_x,s_y)];
         end
-        falg_found=0;
-        while ~isempty(wavefront)&&falg_found==0
+        flag_found=0;
+        while ~isempty(wavefront)&&flag_found==0
             if target_up==2 && flag_of_sum<=1
                 current_position=wavefront(1,:);
                 wavefront(1,:)=[];
@@ -44,11 +44,11 @@ for net_up=1:1:length(netlist)
                 old_grid(index)=grid(index);
                 grid=cleanup(grid,original_data.grid);
                 wavefront=[];
-                falg_found=1;
+                flag_found=1;
                 break;
             end
         end
-        if falg_found==0
+        if flag_found==0
             fprintf("Net ");
             fprintf(num2str(net_up));
             fprintf(" cannot find a route.")
