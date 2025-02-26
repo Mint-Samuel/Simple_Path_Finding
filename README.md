@@ -4,6 +4,11 @@
 
 项目中main.m是主程序，其中引用的函数有一部分在文件夹“Called function”中，需要拷贝至main.m所在的文件夹中才能实现作用。其他部分的程序因为并非由我编写，所以不能自作主张上传，还请谅解。
 
+This algorithm is actually an improved version of Lee's algorithm, which takes into account cost and number of layers 
+这种算法实际上是李算法的改进版，它考虑到了成本和层数问题 
+This algorithm needs grids and netlist for testing, which can be created by using MATLAB
+此算法需要网格和网表，可以在MATLAB中生成
+
 ## 输入说明
 导入的文件包含两个部分：
 
