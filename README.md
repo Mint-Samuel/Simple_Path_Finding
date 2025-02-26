@@ -1,6 +1,6 @@
-# Simple_Path-Finding 简单寻路算法
+# Lee's path finding algorithm 李氏算法
 ## 程序介绍
-利用Matlab代码实现简单的寻路项目。
+利用Matlab代码实现李氏算法项目。
 
 项目中main.m是主程序，其中引用的函数有一部分在文件夹“Called function”中，需要拷贝至main.m所在的文件夹中才能实现作用。其他部分的程序因为并非由我编写，所以不能自作主张上传，还请谅解。
 
@@ -22,8 +22,8 @@
 - 如果为正数，表示没有线网连接，为-1表示。
 - 如果为负数，代表了这个网格有线，同时这个数的绝对值减去1的值为所在线网的编号。
 
-此说明文档最后由Mint-Samuel编辑，欢迎所有人更新代码并在此README文件中更新。
+此说明文档最后由Raccccccc编辑，欢迎所有人更新代码并在此README文件中更新。
 
-Last edited:Mint-Samuel
+Last edited:Raccccccc
 
-2024/07/12 22:04
+2025/2/26 10:53:00
